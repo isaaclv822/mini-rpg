@@ -10,8 +10,8 @@ class DiceFactory:
 
     @staticmethod
     def roll_dice(roll_number, dice: Dice):
-        result = 0
+        score = 0
         for _ in range(roll_number):
-            result += dice.roll()
-            return result
+            score += dice.roll()
+        return score
         
