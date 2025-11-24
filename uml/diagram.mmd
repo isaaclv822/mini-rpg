@@ -1,0 +1,42 @@
+classDiagram
+
+    Player <|-- Ranger
+    Player <|-- Warrior
+    Player <|-- Wizard
+
+    Player -- stat_component
+
+    class Player{
+        string name
+        string hero_class
+        int weaponPoint
+    }
+
+    class stat_component{
+        int level
+        int actionPoint
+        int maxActionPoint
+        int end
+        int pow
+        int speed
+        int intel
+        int pv
+    }
+
+    class Equipment{
+        string name
+        string type
+        List[string] compatibility
+        int equipCost
+        int eEnd
+        int ePow
+        int eSpeed
+        int eIntel
+        int actionCost
+
+        Buff()
+        RemoveBuff()
+        IsCompatible()
+        IsEquipped()
+        GetActionCost()
+    }
