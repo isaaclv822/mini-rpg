@@ -25,7 +25,7 @@ class LevelComponent():
             player.stats.data['speed'] += DiceFactory.roll_dice(3, DiceFactory.dice_3) 
             player.stats.data['intel'] += DiceFactory.roll_dice(1, DiceFactory.dice_3)
 
-        else:
+        elif player.hero_class == "Mage":
             player.stats.data['level'] = player.stats.data['level'] + 1
             player.stats.data['max_action_point'] = player.stats.data['action_point'] + 2
             player.stats.data['end'] += DiceFactory.roll_dice(1, DiceFactory.dice_3) 

@@ -2,6 +2,7 @@ from utils.dice import Dice
 
 class DiceFactory:
     # Dés préconfigurés
+    dice_2 = Dice(2)
     dice_3 = Dice(3)
     dice_5 = Dice(5)
     dice_6 = Dice(6)
