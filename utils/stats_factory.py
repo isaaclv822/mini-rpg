@@ -28,7 +28,7 @@ class StatsFactory():
                 "intel" : DiceFactory.roll_dice(1, DiceFactory.dice_10),
             }
 
-        else:
+        elif player_class == "Mage":
             stats = {
                 "level" : 1,
                 "action_point" : 10,
